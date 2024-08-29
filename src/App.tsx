@@ -16,13 +16,13 @@ function App() {
       <BrowserRouter>
         <Routes>
           {/* <Route path="/" element={<Signup />} /> */}
-          <Route path="/" element={<Login />}/>
-          <Route path="/otp" element={<Otp />}/>
-          <Route path='/ats' element={<Ats/>}/>
-          <Route path='/profile' element={<Profile/>}/>
+          <Route path="/" element={<Login />} />
+          <Route path="/otp" element={<Otp />} />
+          <Route path='/ats' element={<Ats />} />
+          <Route path='/profile' element={<Profile />} />
           {/* <Route path='/message' element={<Message/>}/> */}
-          <Route path='/submit' element={<Submit/>}/>
-          <Route path='/landing' element={<Landing/>}/>
+          <Route path='/submit' element={<Submit />} />
+          <Route path='/landing' element={<Landing />} />
         </Routes>
       </BrowserRouter>
     </>
