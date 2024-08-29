@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactFlow, { Background, Controls, MiniMap, Node, Edge, Position } from 'reactflow';
+import ReactFlow, { Node, Edge } from 'reactflow';
 import 'reactflow/dist/style.css';
 
 const initialNodes: Node[] = [
