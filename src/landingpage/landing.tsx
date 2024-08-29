@@ -55,8 +55,8 @@ function Landing() {
             <Navbar />
 
             <div className='flex flex-col items-center justify-center gap-3 mt-8 px-4'>
-                <h1 className='text-2xl md:text-3xl font-bold text-center'>Let Your Assistant Handle <br /> your job hunt</h1>
-                <p className='text-sm md:text-base text-[#828282] text-center'>
+                <h1 className='text-[64px] font-semibold text-center'>Let Your Assistant Handle <br /> your job hunt</h1>
+                <p className='text-[18px] font-normal text-[#161A1A] text-center'>
                     Tiro is a chat-based AI assistant that finds jobs most relevant to your profile and 
                     <br className="hidden md:block" />
                     submits applications on your behalf.
@@ -70,9 +70,9 @@ function Landing() {
             </div>
 
             <div className='flex justify-center mt-8 px-4'>
-                <div className="w-full max-w-[1340px] h-auto bg-[#323838] rounded-2xl py-3 px-4 sm:px-8 md:px-14 flex flex-col lg:flex-row justify-center gap-4 ">
+                <div className="w-full max-w-[1340px] h-auto bg-[#323838] rounded-2xl grid md:grid-cols-2 xl:grid-cols-3 gap-5 p-5 xl:gap-10 xl:p-10">
                     {Array.from({ length: 3 }).map((_, index) => (
-                        <div key={index} className="w-full max-w-[410px] h-auto bg-white rounded-2xl bg-[url('./assets/images/chatimage.png')]">
+                        <div key={index} className="h-auto bg-white rounded-2xl bg-[url('./assets/images/chatimage.png')]">
                             <div className="p-4 space-y-6">
                                 <ChatMessage time="11:00 AM" type="assistant">
                                     Welcome! 👋 I'm Tiro, here to assist with all your requirements.
@@ -97,7 +97,7 @@ function Landing() {
                 <FeatureIntegration />
             </div>
 
-            <h1 className='text-2xl md:text-3xl font-bold text-center mt-3'>
+            <h1 className='text-[40px] font-semibold text-center mt-3'>
                 While you focus on preparation, <br />
                 Tiro handles the rest
             </h1>

@@ -4,7 +4,7 @@ import user from '@/assets/images/user.png';
 import { GoPencil } from 'react-icons/go';
 import { useState } from "react";
 import { FaRegEdit, FaRegEye, FaRegEyeSlash, FaRegUser } from "react-icons/fa";
-import { IoBagOutline } from "react-icons/io5";
+import { IoBagOutline, IoCheckmarkSharp } from "react-icons/io5";
 
 function Ats() {
     const [eye, setEye] = useState(false);
@@ -96,6 +96,7 @@ function Ats() {
                             </div>
 
                             <div className="flex justify-end items-center gap-3">
+                            <button className="text-[#161A1A] w-[46px] h-[46px] text-2xl flex justify-center items-center  rounded-full mt-3 border-2 border-[#161A1A]"><IoCheckmarkSharp /></button>
                                 <button className="text-[#161A1A] w-[40%] sm:w-[30%] md:w-[25%] lg:w-[114px] xl:w-[114px] font-medium h-12 rounded-3xl mt-3 border-2 border-[#161A1A]">DELETE</button>
                                 <div className="relative h-10 flex items-center w-[40%] sm:w-[30%] md:w-[25%] lg:w-[110px]">
                                     <button className="text-white w-full font-semibold h-12 rounded-3xl mt-3 bg-[#161A1A]">EDIT</button>

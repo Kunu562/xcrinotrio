@@ -5,6 +5,7 @@ import {
     InputOTPGroup,
     InputOTPSlot,
 } from '@/components/ui/input-otp';
+import Navbar from '@/profile/navbar';
 
 const Otp: React.FC = () => {
     const [timeLeft, setTimeLeft] = useState<number>(60);
@@ -17,7 +18,9 @@ const Otp: React.FC = () => {
     }, [timeLeft]);
 
     return (
-        <div className='w-full flex flex-col items-center justify-center h-screen'>
+        <div className='w-full min-h-screen'>
+            <Navbar />
+        <div className='flex flex-col items-center justify-center bg-white py-10'>
             <div className='border rounded-2xl shadow-lg p-6 md:p-16'>
                 <div className='flex justify-center'>
                     <h1 className='text-[32px] font-semibold text-[#232B2B]'>Verify Code</h1>
@@ -32,19 +35,19 @@ const Otp: React.FC = () => {
                         <InputOTPGroup className='flex gap-6'>
                             <InputOTPSlot
                                 index={0}
-                                className='w-12 h-12 border border-gray-300 rounded-lg text-center text-2xl'
+                                className='w-12 h-12 border border-gray-300 rounded-[2px] text-center text-[#7B8697] font-bold text-2xl bg-[#EFF3FF]'
                             />
                             <InputOTPSlot
                                 index={1}
-                                className='w-12 h-12 border border-gray-300 rounded-lg text-center text-2xl'
+                                className='w-12 h-12 border border-gray-300 rounded-[2px] text-center text-[#7B8697] font-bold text-2xl bg-[#EFF3FF]'
                             />
                             <InputOTPSlot
                                 index={2}
-                                className='w-12 h-12 border border-gray-300 rounded-lg text-center text-2xl'
+                                className='w-12 h-12 border border-gray-300 rounded-[2px] text-center text-[#7B8697] font-bold text-2xl bg-[#EFF3FF]'
                             />
                             <InputOTPSlot
                                 index={3}
-                                className='w-12 h-12 border border-gray-300 rounded-lg text-center text-2xl'
+                                className='w-12 h-12 border border-gray-300 rounded-[2px] text-center text-[#7B8697] font-bold text-2xl bg-[#EFF3FF]'
                             />
                         </InputOTPGroup>
                     </InputOTP>
@@ -52,13 +55,14 @@ const Otp: React.FC = () => {
 
                 <div className='flex justify-center items-center mt-4'>
                     <p className='text-[#7B8697] font-medium text-sm'>
-                        Resend code in <span className='font-medium text-sm text-[#232B2B]'>{timeLeft}</span> sec.
+                        Resend code in <span className='font-medium text-sm text-[#232B2B]'>00:{timeLeft}</span>
                     </p>
                 </div>
                 <button className=' text-white w-full md:w-[350px] h-12 rounded-3xl font-medium bg-[#161A1A] mt-6'>
                     CONTINUE
                 </button>
             </div>
+        </div>
         </div>
     );
 };

@@ -9,10 +9,10 @@ interface MessageProps {
     closeChat: () => void;
 }
 
-const Message: React.FC<MessageProps> = ({ closeChat }) => {
+ const Message: React.FC<MessageProps> = ({ closeChat }) => {
     return (
-        <div className="message w-full">
-            <div className=" flex justify-center items-center p-6">
+        <div className="message w-full rounded-xl shadow-xl">
+            <div className=" flex justify-center items-center">
                 <div className=" w-[740px] rounded-2xl">
                     <Header closeChat={closeChat} />
                     <ChatWindow />
@@ -103,8 +103,8 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ time, type, children }) => {
 };
 
 const ChatInput: React.FC = () => (
-    <div className="p-4 border-t flex items-center w-full bg-white ">
-        <div className="p-3 rounded-lg border relative w-full flex">
+    <div className="p-4 border-t flex items-center w-full bg-white">
+        <div className="p-3 rounded-2xl border relative w-full flex gap-3">
             <img src={pin} alt="" />
             <input
                 type="text"

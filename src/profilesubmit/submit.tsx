@@ -157,6 +157,15 @@ function Submit() {
                         </div>
                     </div>
 
+                    <div className="flex flex-col gap-2 mt-4">
+                            <label className="font-normal text-sm text-[#161A1A]">LinkedIn Profile</label>
+                            <input
+                                name="linkedin"
+                                className="px-3 py-2 w-full text-sm text-gray-600 bg-[#F8F8F8] border border-gray-300 rounded-xl outline-none"
+                                type="text"
+                                placeholder="here" />
+                        </div>
+
                     <div className='flex justify-between'>
                         <HearAboutTiro />
                         {/* <div className='relative'>

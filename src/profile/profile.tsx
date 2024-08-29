@@ -13,14 +13,10 @@ import { MdOutlineCancel } from 'react-icons/md';
 import { TbReload } from 'react-icons/tb';
 
 function Profile() {
-    const [isChatOpen, setIsChatOpen] = useState(false);
+    const [openChat, setOpenChat] = useState(false);
 
-    const openChat = () => {
-        setIsChatOpen(true);
-    };
-
-    const closeChat = () => {
-        setIsChatOpen(false);
+    const handleChatToggle = () => {
+        setOpenChat(!openChat);
     };
 
     return (
@@ -123,22 +119,29 @@ function Profile() {
                                 name="linkedin"
                                 className="px-3 py-2 w-full text-sm text-gray-600 bg-[#F8F8F8] border border-gray-300 rounded-xl outline-none"
                                 type="text"
-                                placeholder="Your LinkedIn Profile" />
+                                placeholder="here" />
                         </div>
 
                         <div className='flex flex-col lg:flex-row justify-between mt-6 gap-4'>
                             <HearAboutTiro />
-                            <div className='relative'>
-                                <button
-                                    className='text-[#161A1A] border border-[#161A1A] w-full lg:w-32 h-12 rounded-2xl bg-[#F8F8F8] text-center'
-                                    onClick={openChat}
-                                >
-                                    Chat
-                                </button>
-                                <div className='absolute top-[37px] left-6'>
-                                    <img src={chat} alt="Chat Icon" />
-                                </div>
+
+
+                            <div className='fixed bottom-10 right-16 bg-white'>
+                                {openChat ? <Message closeChat={handleChatToggle} />
+                                    : <div className='flex gap-2 items-center justify-center' onClick={handleChatToggle}>  <button
+                                        className='text-[#161A1A] border border-[#161A1A] w-full lg:w-32 h-12 rounded-2xl bg-[#F8F8F8] text-center'
+
+                                    >
+                                        Chat
+                                    </button>
+                                        <div className='absolute top-[19px] left-6'>
+                                            <img src={chat} alt="Chat Icon" />
+                                        </div></div>
+                                }
+
+
                             </div>
+
                         </div>
 
                         <Bottomsec />
@@ -146,30 +149,22 @@ function Profile() {
                         <div className="flex justify-center items-center gap-3 mt-6">
                             <button
                                 className="text-[#323838] text-base w-full sm:w-[40%] lg:w-[30%] xl:w-[25%] flex items-center justify-center gap-2 font-semibold h-12 rounded-3xl border-2 border-[#323838]"
-                                onClick={closeChat}
+                                onClick={handleChatToggle}
                             >
-                                Cancel
                                 <MdOutlineCancel />
+                                Cancel
                             </button>
                             <button
                                 className="text-white text-base w-full sm:w-[40%] lg:w-[30%] xl:w-[25%] flex items-center justify-center gap-2 font-medium h-12 rounded-3xl border-2 bg-[#323838]"
                             >
-                                Update Profile
                                 <TbReload />
+                                Update Profile
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
 
-            {/* Modal */}
-            {isChatOpen && (
-                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-                    <div className="bg-white rounded-lg shadow-lg w-full max-w-[740px]">
-                        <Message closeChat={closeChat} />
-                    </div>
-                </div>
-            )}
         </div>
     );
 }

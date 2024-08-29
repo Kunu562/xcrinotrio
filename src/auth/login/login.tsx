@@ -1,3 +1,4 @@
+import Navbar from '@/profile/navbar';
 import React, { useState } from 'react';
 import { CiMail } from 'react-icons/ci';
 import { MdOutlinePhone } from 'react-icons/md';
@@ -10,8 +11,10 @@ const Login: React.FC = () => {
     };
 
     return (
-        <div className='w-full flex flex-col items-center justify-center h-screen'>
-            <div className='border rounded-2xl shadow-lg p-6 md:p-16'>
+        <div className='w-full min-h-screen'>
+            <Navbar />
+        <div className=' flex flex-col items-center justify-center bg-white py-10'>
+            <div className='border rounded-2xl shadow-lg p-6 md:p-16 bg-white'>
                 <div className='flex justify-center'>
                     <h1 className='text-[32px] font-semibold text-[#232B2B]'>Sign in</h1>
                 </div>
@@ -59,6 +62,7 @@ const Login: React.FC = () => {
                 </div>
                 <button className='text-white w-full md:w-[350px] h-12 font-medium rounded-3xl bg-[#161A1A] mt-6'>GET OTP</button>
             </div>
+        </div>
         </div>
     );
 }
