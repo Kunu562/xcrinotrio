@@ -70,9 +70,9 @@ function Landing() {
             </div>
 
             <div className='flex justify-center mt-8 px-4'>
-                <div className='w-full max-w-[1340px] h-auto bg-[#323838] rounded-2xl py-3 px-4 sm:px-8 md:px-14 flex flex-col lg:flex-row justify-center gap-4'>
+                <div className="w-full max-w-[1340px] h-auto bg-[#323838] rounded-2xl py-3 px-4 sm:px-8 md:px-14 flex flex-col lg:flex-row justify-center gap-4 ">
                     {Array.from({ length: 3 }).map((_, index) => (
-                        <div key={index} className='w-full max-w-[410px] h-auto bg-white rounded-2xl'>
+                        <div key={index} className="w-full max-w-[410px] h-auto bg-white rounded-2xl bg-[url('./assets/images/chatimage.png')]">
                             <div className="p-4 space-y-6">
                                 <ChatMessage time="11:00 AM" type="assistant">
                                     Welcome! 👋 I'm Tiro, here to assist with all your requirements.

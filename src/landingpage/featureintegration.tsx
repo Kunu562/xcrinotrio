@@ -12,9 +12,9 @@ const FeatureItem: React.FC<{
     title: string;
     description: string
 }> = React.memo(({ imgSrc, title, description }) => (
-    <div className="flex items-start space-x-4">
-        <div className="w-11 h-11 bg-[#E3E9F2] rounded-xl flex justify-center items-center">
-            <img src={imgSrc} alt="" className="text-gray-600" />
+    <div className="flex items-start space-x-6">
+        <div className="w-11 h-11 min-w-11 min-h-11 bg-[#E3E9F2] rounded-xl flex justify-center items-center">
+            <img src={imgSrc} alt="" className="text-gray-600 w-6 h-6" />
         </div>
         <div>
             <h3 className="font-semibold text-lg">{title}</h3>

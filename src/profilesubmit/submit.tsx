@@ -7,24 +7,24 @@ import ProfileOtp from '@/profile/profileotp';
 import HearAboutTiro from '@/profile/hearchat';
 import Bottomsec from '@/profile/bottomsec';
 import circle from "@/assets/images/Ellipse 87.png"
-import { useState } from 'react';
-import Message from '@/message/message';
-import chat from "@/assets/images/Icon.png"
+// import { useState } from 'react';
+// import Message from '@/message/message';
+// import chat from "@/assets/images/Icon.png"
 import { MdOutlineCancel } from 'react-icons/md';
 
 
 function Submit() {
-    const [isChatOpen, setIsChatOpen] = useState(false);
+    // const [isChatOpen, setIsChatOpen] = useState(false);
 
-    const openChat = () => {
-        setIsChatOpen(true);
-    };
+    // const openChat = () => {
+    //     setIsChatOpen(true);
+    // };
 
-    const closeChat = () => {
-        setIsChatOpen(false);
-    };
+    // const closeChat = () => {
+    //     setIsChatOpen(false);
+    // };
     return (
-        <div className='w-full bg-[#F8F8F8]'>
+        <div className='w-full bg-[#F8F8F8] overflow-x-hidden'>
             {/* Navbar */}
             <div className='bg-white shadow-base'>
                 <div className='flex justify-between items-center h-14 px-6 lg:px-16 py-4'>
@@ -84,21 +84,31 @@ function Submit() {
                     <h1 className='text-[#161A1A] font-semibold text-lg lg:text-xl text-center'>Profile Submission Form</h1>
                     <hr className='mt-2' />
 
-                    <div className='flex flex-col lg:flex-row gap-4 mt-4'>
-                        <div className="w-full flex flex-col gap-2">
-                            <label className="font-normal text-sm lg:text-base text-[#161A1A]">First Name</label>
-                            <input
-                                className="px-3 py-2 w-full text-sm text-gray-600 bg-[#F8F8F8] border border-gray-300 rounded-xl outline-none"
-                                type="text"
-                                placeholder="Your first name" />
+                    <div className='flex flex-col lg:flex-row gap-4'>
+                        <div className="w-full flex flex-col mt-3 gap-2">
+                            <div className="flex items-center">
+                                <p className="font-normal text-sm text-[#161A1A]">First Name</p>
+                            </div>
+                            <div>
+                                <input
+                                    name="firstName"
+                                    className="px-3 py-2 w-full text-sm text-gray-600 bg-[#F8F8F8] border border-gray-300 rounded-xl outline-none"
+                                    type="text"
+                                    placeholder="Your first name" />
+                            </div>
                         </div>
 
-                        <div className="w-full flex flex-col gap-2">
-                            <label className="font-normal text-sm lg:text-base text-[#161A1A]">Last Name</label>
-                            <input
-                                className="px-3 py-2 w-full text-sm text-gray-600 bg-[#F8F8F8] border border-gray-300 rounded-xl outline-none"
-                                type="text"
-                                placeholder="Your last name" />
+                        <div className="w-full flex flex-col mt-3 gap-2">
+                            <div className="flex items-center">
+                                <p className="font-normal text-sm text-[#161A1A]">Last Name</p>
+                            </div>
+                            <div>
+                                <input
+                                    name="lastName"
+                                    className="px-3 py-2 w-full text-sm text-gray-600 bg-[#F8F8F8] border border-gray-300 rounded-xl outline-none"
+                                    type="text"
+                                    placeholder="Your Last name" />
+                            </div>
                         </div>
                     </div>
 
@@ -136,7 +146,7 @@ function Submit() {
                         <label htmlFor="resume" className="text-gray-700">Resume</label>
                         <div className="flex items-center p-2">
                             <input type="file" id="resume" className="hidden" accept=".pdf,.doc,.docx" />
-                            <label htmlFor="resume" className="flex-grow flex justify-between px-4 py-2 text-gray-500 bg-gray-100 rounded-xl cursor-pointer hover:bg-gray-200">
+                            <label htmlFor="resume" className="flex-grow flex justify-between items-center px-4 py-2 text-gray-500 bg-gray-100 rounded-xl cursor-pointer hover:bg-gray-200">
                                 Attach
                                 <button
                                     type="button"
@@ -149,7 +159,7 @@ function Submit() {
 
                     <div className='flex justify-between'>
                         <HearAboutTiro />
-                        <div className='relative'>
+                        {/* <div className='relative'>
                             <button className='text-[#161A1A] border border-[#161A1A] w-full lg:w-32 h-12 rounded-2xl bg-[#F8F8F8] mt-6 text-center'
                                 onClick={openChat}>
                                 Chat
@@ -157,7 +167,7 @@ function Submit() {
                             <div className='absolute top-[37px] left-6 mt-1'>
                                 <img src={chat} alt="" />
                             </div>
-                        </div>
+                        </div> */}
                     </div>
 
                     <Bottomsec />
@@ -173,13 +183,13 @@ function Submit() {
             </div>
 
             {/* Modal */}
-            {isChatOpen && (
+            {/* {isChatOpen && (
                 <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
                     <div className="bg-white rounded-lg shadow-lg w-full max-w-[740px]">
                         <Message closeChat={closeChat} />
                     </div>
                 </div>
-            )}
+            )} */}
         </div>
     );
 }
