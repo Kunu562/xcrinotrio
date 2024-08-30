@@ -49,22 +49,12 @@ function Submit() {
                 </div>
             </div>
 
-            {/* Breadcrumbs */}
-            <div className='flex justify-between px-6 lg:px-16 py-3'>
-                <h1 className='text-[#161A1A] font-semibold text-lg lg:text-xl'>Profile</h1>
-                <div className='flex items-center gap-2 lg:gap-3'>
-                    <h1 className='text-[#161A1A] font-semibold text-lg lg:text-xl'>Profile</h1>
-                    <IoIosArrowForward className='mt-1' />
-                    <h1 className='text-[#161A1A] font-semibold text-lg lg:text-xl'>Edit Profile</h1>
-                </div>
-            </div>
-
             {/* Main Content */}
             <div className='flex flex-col lg:flex-row gap-5 px-6 lg:px-16 py-3'>
 
                 {/* Left Sidebar */}
 
-                <div className='w-full lg:w-[288px] h-[450px] bg-white rounded-2xl shadow-md p-5'>
+                <div className='w-full lg:w-[288px] lg:col-span-1 h-[450px] bg-white rounded-2xl shadow-md p-5'>
                     <div className='flex flex-col justify-center items-center'>
                         <div className='relative w-24 h-24 lg:w-32 lg:h-32'>
                             <img className='absolute inset-0 w-full h-full rounded-full object-cover' src={user} alt="User" />
@@ -92,7 +82,7 @@ function Submit() {
                             <div>
                                 <input
                                     name="firstName"
-                                    className="px-3 py-2 w-full text-sm text-gray-600 bg-[#F8F8F8] border border-gray-300 rounded-xl outline-none"
+                                    className="px-3 py-2 w-full h-[45px] text-[#828282] font-normal text-xs bg-[#F8F8F8] rounded-xl outline-none"
                                     type="text"
                                     placeholder="Your first name" />
                             </div>
@@ -105,7 +95,7 @@ function Submit() {
                             <div>
                                 <input
                                     name="lastName"
-                                    className="px-3 py-2 w-full text-sm text-gray-600 bg-[#F8F8F8] border border-gray-300 rounded-xl outline-none"
+                                    className="px-3 py-2 w-full h-[45px] text-[#828282] font-normal text-xs bg-[#F8F8F8] rounded-xl outline-none"
                                     type="text"
                                     placeholder="Your Last name" />
                             </div>
@@ -115,7 +105,7 @@ function Submit() {
                     <div className="w-full flex flex-col gap-2 mt-4">
                         <label className="font-normal text-sm lg:text-base text-[#161A1A]">Email Address</label>
                         <input
-                            className="px-3 py-2 w-full text-sm text-gray-600 bg-[#F8F8F8] border border-gray-300 rounded-xl outline-none"
+                            className="px-3 py-2 w-full h-[45px] text-[#828282] font-normal text-xs bg-[#F8F8F8] rounded-xl outline-none"
                             type="text"
                             placeholder="Your email address" />
                     </div>
@@ -124,7 +114,7 @@ function Submit() {
                         <label className="font-normal text-sm lg:text-base text-[#161A1A]">Phone Number</label>
                         <div className='flex flex-col lg:flex-row gap-4'>
                             <input
-                                className="px-3 py-2 w-full lg:w-[850px] text-sm text-gray-600 bg-[#F8F8F8] border border-gray-300 rounded-xl outline-none"
+                                className="px-3 py-2 w-full h-[45px] text-[#828282] font-normal text-xs bg-[#F8F8F8] rounded-xl outline-none"
                                 type="text"
                                 placeholder="Your phone number" />
                             <div className='flex items-center gap-4 lg:w-[211px] bg-[#F8F8F8]'>
@@ -142,29 +132,33 @@ function Submit() {
                     {/* Profile OTP */}
                     <ProfileOtp />
 
-                    <div className="flex flex-col w-full mt-6">
+                    <div className="flex flex-col gap-1 mt-4">
                         <label htmlFor="resume" className="text-gray-700">Resume</label>
-                        <div className="flex items-center p-2">
+                        <div className="flex items-center">
                             <input type="file" id="resume" className="hidden" accept=".pdf,.doc,.docx" />
-                            <label htmlFor="resume" className="flex-grow flex justify-between items-center px-4 py-2 text-gray-500 bg-gray-100 rounded-xl cursor-pointer hover:bg-gray-200">
+                            <label
+                                htmlFor="resume"
+                                className="flex-grow flex justify-between items-center px-4 py-2 text-[#828282] font-normal text-xs bg-[#F8F8F8] rounded-xl cursor-pointer hover:bg-gray-200"
+                            >
                                 Attach
                                 <button
                                     type="button"
-                                    className="ml-4 px-4 py-2 text-sm font-medium text-black bg-[#C1C1C1] rounded-xl hover:bg-gray-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#C1C1C1]">
+                                    className="ml-4 px-4 py-2 text-sm font-medium text-black bg-[#C1C1C1] rounded-xl hover:bg-gray-800"
+                                >
                                     Browse
                                 </button>
                             </label>
                         </div>
                     </div>
 
-                    <div className="flex flex-col gap-2 mt-4">
-                            <label className="font-normal text-sm text-[#161A1A]">LinkedIn Profile</label>
-                            <input
-                                name="linkedin"
-                                className="px-3 py-2 w-full text-sm text-gray-600 bg-[#F8F8F8] border border-gray-300 rounded-xl outline-none"
-                                type="text"
-                                placeholder="here" />
-                        </div>
+                    <div className="flex flex-col gap-1 mt-4">
+                        <label className="font-normal text-sm text-[#161A1A]">LinkedIn Profile</label>
+                        <input
+                            name="linkedin"
+                            className="w-full h-12 outline-none rounded-xl px-4 text-[#828282] font-normal text-xs bg-[#F8F8F8]"
+                            type="text"
+                            placeholder="here" />
+                    </div>
 
                     <div className='flex justify-between'>
                         <HearAboutTiro />
@@ -182,11 +176,11 @@ function Submit() {
                     <Bottomsec />
 
                     {/* Submit Button */}
-                    <div className="flex justify-center items-center gap-3 mt-3">
-                        <button className="text-[#323838] text-base w-full sm:w-[40%] lg:w-[30%] xl:w-[25%] flex items-center justify-center gap-2 font-semibold h-12 rounded-3xl mt-3 border-2 border-[#323838]">Cancel
+                    <div className="flex justify-center flex-col md:flex-row items-center gap-3 mt-3">
+                        <button className="text-[#323838] text-base w-full sm:w-[40%] md:w-[205px] lg:w-[205px] xl:w-[205px] flex items-center justify-center gap-2 font-semibold h-12 rounded-3xl mt-3 border-2 border-[#323838]">Cancel
                             <MdOutlineCancel className='-order-1' />
                         </button>
-                        <button className="text-white text-base w-[40%] sm:w-[30%] md:w-[25%] lg:w-[20%]  font-medium h-12 rounded-3xl mt-3 border-2 bg-[#161A1A]">Submit</button>
+                        <button className="text-white text-base w-full sm:w-[40%] md:w-[205px] lg:w-[205px]  font-medium h-12 rounded-3xl mt-3 border-2 bg-[#161A1A]">Submit</button>
                     </div>
                 </div>
             </div>

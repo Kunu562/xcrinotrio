@@ -1,6 +1,7 @@
 import Navbar from '@/profile/navbar';
 import FeatureIntegration from './featureintegration';
 import star from '@/assets/images/stars.png';
+import Landingnavbar from './landingnav';
 
 function Landing() {
 
@@ -51,8 +52,8 @@ function Landing() {
     };
 
     return (
-        <div className='w-full bg-[#F8F8F8]'>
-            <Navbar />
+        <div className='w-full bg-white'>
+            <Landingnavbar />
 
             <div className='flex flex-col items-center justify-center gap-3 mt-8 px-4'>
                 <h1 className='text-[64px] font-semibold text-center'>Let Your Assistant Handle <br /> your job hunt</h1>

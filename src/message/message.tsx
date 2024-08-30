@@ -9,11 +9,11 @@ interface MessageProps {
     closeChat: () => void;
 }
 
- const Message: React.FC<MessageProps> = ({ closeChat }) => {
+const Message: React.FC<MessageProps> = ({ closeChat }) => {
     return (
         <div className="message w-full rounded-xl shadow-xl">
-            <div className=" flex justify-center items-center">
-                <div className=" w-[740px] rounded-2xl">
+            <div className="flex justify-center items-center">
+                <div className="w-full lg:w-[740px] rounded-2xl">
                     <Header closeChat={closeChat} />
                     <ChatWindow />
                     <ChatInput />
@@ -25,20 +25,20 @@ interface MessageProps {
 
 const Header: React.FC<{ closeChat: () => void }> = ({ closeChat }) => (
     <div className="flex items-center bg-white p-4 border-b border-gray-200">
-        <div className='w-11 h-11 rounded-full bg-[#323838]'>
-            <img src={user} alt="" />
+        <div className='w-9 h-9 lg:w-11 lg:h-11 rounded-full bg-[#323838]'>
+            <img src={user} alt="User" />
         </div>
         <div className="ml-3">
-            <h2 className="text-lg font-semibold">Caleb Antonucci</h2>
-            <p className="text-sm text-gray-500">Last seen 29m ago</p>
+            <h2 className="text-base lg:text-lg font-semibold">Caleb Antonucci</h2>
+            <p className="text-xs lg:text-sm text-gray-500">Last seen 29m ago</p>
         </div>
         <button className="ml-auto text-gray-500" onClick={closeChat}>✕</button>
     </div>
 );
 
 const ChatWindow: React.FC = () => (
-    <div className="p-4 space-y-6 h-[400px] overflow-y-auto bg-[url('./assets/images/chatimage.png')]">
-        <h1 className="text-center pb-5 text-[20px] font-medium text-[#161A1A]">
+    <div className="p-4 space-y-6 h-[400px] md:h-[350px] lg:h-[350px] xl:h-[450px] overflow-y-auto bg-[url('./assets/images/chatimage.png')]">
+        <h1 className="text-center pb-5 text-sm lg:text-[20px] font-medium text-[#161A1A]">
             Thursday, 25 August 2024
         </h1>
         <ChatMessage time="11:00 AM" type="assistant">
@@ -70,13 +70,13 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ time, type, children }) => {
     return (
         <div className={`flex ${isAssistant ? "justify-start" : "justify-end"} items-start`}>
             {isAssistant && (
-                <div className='w-9 h-9 rounded-full bg-[#323838] flex items-center gap-3'>
-                    <img src={star} alt="" />
+                <div className='w-7 h-7 lg:w-9 lg:h-9 rounded-full bg-[#323838] flex items-center gap-3'>
+                    <img src={star} alt="Assistant Icon" />
                 </div>
             )}
             <div className={`ml-3 ${isAssistant ? "" : "text-right"}`}>
                 <div
-                    className={`p-4 rounded-2xl ${isAssistant
+                    className={`p-3 lg:p-4 rounded-2xl ${isAssistant
                         ? "bg-white text-[#323838] shadow"
                         : "bg-[#F1F3F4] text-[#323838]"
                         }`}
@@ -84,7 +84,7 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ time, type, children }) => {
                         borderRadius: isAssistant
                             ? "18px 18px 18px 3px"
                             : "18px 18px 3px 18px",
-                        maxWidth: "320px",
+                        maxWidth: "440px",
                     }}
                 >
                     {children}
@@ -93,8 +93,8 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ time, type, children }) => {
             </div>
             {!isAssistant && (
                 <div className="ml-3 flex-shrink-0">
-                    <div className='w-11 h-11 rounded-full bg-[#323838]'>
-                        <img src={user} alt="" />
+                    <div className='w-7 h-7 lg:w-11 lg:h-11 rounded-full bg-[#323838]'>
+                        <img src={user} alt="User" />
                     </div>
                 </div>
             )}
@@ -103,9 +103,9 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ time, type, children }) => {
 };
 
 const ChatInput: React.FC = () => (
-    <div className="p-4 border-t flex items-center w-full bg-white">
+    <div className="p-4 flex items-center w-full bg-white">
         <div className="p-3 rounded-2xl border relative w-full flex gap-3">
-            <img src={pin} alt="" />
+            <img src={pin} alt="Pin" />
             <input
                 type="text"
                 placeholder="Type a message..."
@@ -113,7 +113,7 @@ const ChatInput: React.FC = () => (
             />
             <BsSend />
         </div>
-        <button className="ml-3 text-[3rem]">
+        <button className="ml-3 text-2xl lg:text-[3rem]">
             <IoMicCircleSharp />
         </button>
     </div>

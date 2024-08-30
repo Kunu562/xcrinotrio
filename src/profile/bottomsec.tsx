@@ -8,18 +8,19 @@ function Bottomsec() {
                 <select
                     name="userType"
                     id="userType"
-                    className='border w-full h-12 outline-none rounded-xl px-2'
+                    className='w-full h-12 outline-none rounded-xl px-4 text-[#828282] font-normal text-xs bg-[#F8F8F8]'
                 >
                     <option value="Job seekers">Select</option>
                 </select>
             </div>
 
+
             <div className='mt-3 flex flex-col gap-2'>
-                <h1 className='text-sm font-normal text-[#232B2B]'>AWill you now or in the future require sponsorship</h1>
+                <h1 className='text-sm font-normal text-[#232B2B]'>Will you now or in the future require sponsorship</h1>
                 <select
                     name="userType"
                     id="userType"
-                    className='border w-full h-12 outline-none rounded-xl px-2'
+                    className='w-full h-12 outline-none rounded-xl px-4 text-[#828282] font-normal text-xs bg-[#F8F8F8]'
                 >
                     <option value="Job seekers">Select</option>
                 </select>
@@ -30,7 +31,7 @@ function Bottomsec() {
                 <select
                     name="userType"
                     id="userType"
-                    className='border w-full h-12 outline-none rounded-xl px-2'
+                    className='w-full h-12 outline-none rounded-xl px-4 text-[#828282] font-normal text-xs bg-[#F8F8F8]'
                 >
                     <option value="Job seekers">Select</option>
                 </select>
@@ -41,7 +42,7 @@ function Bottomsec() {
                 <select
                     name="userType"
                     id="userType"
-                    className='border w-full h-12 outline-none rounded-xl px-2'
+                    className='w-full h-12 outline-none rounded-xl px-4 text-[#828282] font-normal text-xs bg-[#F8F8F8]'
                 >
                     <option value="Job seekers">Select</option>
                 </select>
@@ -56,7 +57,7 @@ function Bottomsec() {
                         <select
                             name="userType"
                             id="userType"
-                            className='border w-full h-12 outline-none rounded-xl px-2'
+                            className='w-full h-12 outline-none rounded-xl px-4 text-[#828282] font-normal text-xs bg-[#F8F8F8]'
                         >
                             <option value="Job seekers">Select</option>
                         </select>
@@ -71,7 +72,7 @@ function Bottomsec() {
                         <select
                             name="userType"
                             id="userType"
-                            className='border w-full h-12 outline-none rounded-xl px-2'
+                            className='w-full h-12 outline-none rounded-xl px-4 text-[#828282] font-normal text-xs bg-[#F8F8F8]'
                         >
                             <option value="Job seekers">Select</option>
                         </select>

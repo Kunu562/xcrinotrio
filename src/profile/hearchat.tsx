@@ -4,7 +4,7 @@ const HearAboutTiro: React.FC = () => {
     const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
     const [otherText, setOtherText] = useState('');
 
-    const options = ['Internet', 'Friend', 'Social Media', 'Other'];
+    const options = ['Careers website', 'Friend', 'Google', 'Other'];
 
     const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const value = event.target.value;
@@ -17,16 +17,16 @@ const HearAboutTiro: React.FC = () => {
 
     return (
         <div className="flex flex-col mt-6">
-            <label className="mb-2 text-gray-700">
+            <label className="mb-2 text-[#000000] font-normal text-base">
             How did you hear about Tiro <br /> Please Click all that apply
             </label>
             {options.map(option => (
-                <label key={option} className="flex items-center mb-2">
+                <label key={option} className="flex items-center mb-1 mt-3 text-[#828282] font-normal text-xs gap-2">
                     <input
                         type="checkbox"
                         value={option}
                         onChange={handleCheckboxChange}
-                        className="mr-2 text-[#828282]"
+                        className="mr-2 border bg-[#F8F8F8]"
                     />
                     {option}
                 </label>
@@ -37,7 +37,7 @@ const HearAboutTiro: React.FC = () => {
                     placeholder="Please specify"
                     value={otherText}
                     onChange={(e) => setOtherText(e.target.value)}
-                    className="p-2 border border-gray-300 rounded-md mt-2"
+                    className="p-2  rounded-md mt-2 text-[#828282] font-normal text-xs"
                 />
             )}
         </div>

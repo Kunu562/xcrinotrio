@@ -35,19 +35,19 @@ const Otp: React.FC = () => {
                         <InputOTPGroup className='flex gap-6'>
                             <InputOTPSlot
                                 index={0}
-                                className='w-12 h-12 border border-gray-300 rounded-[2px] text-center text-[#7B8697] font-bold text-2xl bg-[#EFF3FF]'
+                                className='w-12 h-12 rounded-[2px] text-center text-[#7B8697] font-bold text-2xl bg-[#EFF3FF]'
                             />
                             <InputOTPSlot
                                 index={1}
-                                className='w-12 h-12 border border-gray-300 rounded-[2px] text-center text-[#7B8697] font-bold text-2xl bg-[#EFF3FF]'
+                                className='w-12 h-12 rounded-[2px] text-center text-[#7B8697] font-bold text-2xl bg-[#EFF3FF]'
                             />
                             <InputOTPSlot
                                 index={2}
-                                className='w-12 h-12 border border-gray-300 rounded-[2px] text-center text-[#7B8697] font-bold text-2xl bg-[#EFF3FF]'
+                                className='w-12 h-12 rounded-[2px] text-center text-[#7B8697] font-bold text-2xl bg-[#EFF3FF]'
                             />
                             <InputOTPSlot
                                 index={3}
-                                className='w-12 h-12 border border-gray-300 rounded-[2px] text-center text-[#7B8697] font-bold text-2xl bg-[#EFF3FF]'
+                                className='w-12 h-12 rounded-[2px] text-center text-[#7B8697] font-bold text-2xl bg-[#EFF3FF]'
                             />
                         </InputOTPGroup>
                     </InputOTP>

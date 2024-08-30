@@ -43,47 +43,45 @@ function Profile() {
                         <hr className='mt-2' />
 
                         <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 mt-4'>
-                            <div className="flex flex-col gap-2">
+                            <div className="flex flex-col gap-1">
                                 <label className="font-normal text-sm text-[#161A1A]">First Name</label>
                                 <input
                                     name="firstName"
-                                    className="px-3 py-2 w-full text-sm text-gray-600 bg-[#F8F8F8] border border-gray-300 rounded-xl outline-none"
+                                    className="px-3 py-2 w-full h-[45px] text-[#828282] font-normal text-xs bg-[#F8F8F8] rounded-xl outline-none"
                                     type="text"
                                     placeholder="Your first name" />
                             </div>
 
-                            <div className="flex flex-col gap-2">
+                            <div className="flex flex-col gap-1">
                                 <label className="font-normal text-sm text-[#161A1A]">Last Name</label>
                                 <input
                                     name="lastName"
-                                    className="px-3 py-2 w-full text-sm text-gray-600 bg-[#F8F8F8] border border-gray-300 rounded-xl outline-none"
+                                    className="px-3 py-2 w-full h-[45px] text-[#828282] font-normal text-xs bg-[#F8F8F8] rounded-xl outline-none"
                                     type="text"
                                     placeholder="Your last name" />
                             </div>
                         </div>
 
-                        <div className="flex flex-col gap-2 mt-4">
+                        <div className="flex flex-col gap-1 mt-4">
                             <label className="font-normal text-sm text-[#161A1A]">Email Address</label>
                             <input
                                 name="email"
-                                className="px-3 py-2 w-full text-sm text-gray-600 bg-[#F8F8F8] border border-gray-300 rounded-xl outline-none"
+                                className="px-3 py-2 w-full h-[45px] text-[#828282] font-normal text-xs bg-[#F8F8F8] rounded-xl outline-none"
                                 type="text"
                                 placeholder="Your Email Address" />
                         </div>
 
-                        <div className="flex flex-col gap-2 mt-4">
-                            <label className="font-normal text-sm text-[#161A1A]">Phone Number</label>
+                        <div className="w-full flex flex-col gap-1 mt-4">
+                            <label className="font-normal text-sm lg:text-base text-[#161A1A]">Phone Number</label>
                             <div className='flex flex-col lg:flex-row gap-4'>
                                 <input
-                                    name="phoneNumber"
-                                    className="px-3 py-2 w-full text-sm text-gray-600 bg-[#F8F8F8] border border-gray-300 rounded-xl outline-none"
+                                    className="px-3 py-2 w-full h-[45px] text-[#828282] font-normal text-xs bg-[#F8F8F8] rounded-xl outline-none"
                                     type="text"
-                                    placeholder="Your Phone Number" />
-
-                                <div className='flex items-center gap-4 w-full lg:w-[211px] bg-[#F8F8F8]'>
+                                    placeholder="Your phone number" />
+                                <div className='flex items-center gap-4 lg:w-[211px] bg-[#F8F8F8]'>
                                     <div className='relative'>
                                         <img src={box} alt="Verify" />
-                                        <h1 className='absolute top-2 left-0 right-0 text-white text-center'>Verify</h1>
+                                        <h1 className='absolute top-2 left-0 right-0 bottom-0 text-white text-center'>Verify</h1>
                                     </div>
                                     <div className='w-9 h-9 rounded-full bg-white flex items-center justify-center'>
                                         <FaCheck />
@@ -94,13 +92,13 @@ function Profile() {
 
                         <ProfileOtp />
 
-                        <div className="flex flex-col gap-2 mt-4">
+                        <div className="flex flex-col gap-1 mt-4">
                             <label htmlFor="resume" className="text-gray-700">Resume</label>
                             <div className="flex items-center">
                                 <input type="file" id="resume" className="hidden" accept=".pdf,.doc,.docx" />
                                 <label
                                     htmlFor="resume"
-                                    className="flex-grow flex justify-between px-4 py-2 text-gray-500 bg-gray-100 rounded-xl cursor-pointer hover:bg-gray-200"
+                                    className="flex-grow flex justify-between items-center px-4 py-2 text-[#828282] font-normal text-xs bg-[#F8F8F8] rounded-xl cursor-pointer hover:bg-gray-200"
                                 >
                                     Attach
                                     <button
@@ -113,11 +111,11 @@ function Profile() {
                             </div>
                         </div>
 
-                        <div className="flex flex-col gap-2 mt-4">
+                        <div className="flex flex-col gap-1 mt-4">
                             <label className="font-normal text-sm text-[#161A1A]">LinkedIn Profile</label>
                             <input
                                 name="linkedin"
-                                className="px-3 py-2 w-full text-sm text-gray-600 bg-[#F8F8F8] border border-gray-300 rounded-xl outline-none"
+                                className="w-full h-12 outline-none rounded-xl px-4 text-[#828282] font-normal text-xs bg-[#F8F8F8]"
                                 type="text"
                                 placeholder="here" />
                         </div>
@@ -126,10 +124,10 @@ function Profile() {
                             <HearAboutTiro />
 
 
-                            <div className='fixed bottom-10 right-16 bg-white'>
+                            <div className=' fixed bottom-2 right-16 bg-white'>
                                 {openChat ? <Message closeChat={handleChatToggle} />
                                     : <div className='flex gap-2 items-center justify-center' onClick={handleChatToggle}>  <button
-                                        className='text-[#161A1A] border border-[#161A1A] w-full lg:w-32 h-12 rounded-2xl bg-[#F8F8F8] text-center'
+                                        className='text-[#161A1A] border border-[#161A1A] w-32 md:w-32 lg:w-32  h-12 rounded-2xl bg-[#F8F8F8] text-center'
 
                                     >
                                         Chat

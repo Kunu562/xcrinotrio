@@ -17,8 +17,8 @@ const FeatureItem: React.FC<{
             <img src={imgSrc} alt="" className="text-gray-600 w-6 h-6" />
         </div>
         <div>
-            <h3 className="font-semibold text-lg">{title}</h3>
-            <p className="text-gray-500">{description}</p>
+            <h3 className="font-bold text-lg text-[#161A1A]">{title}</h3>
+            <p className="text-[#828282] font-normal text-base">{description}</p>
         </div>
     </div>
 ));
