@@ -1,4 +1,4 @@
-import { IoIosArrowDown, IoIosArrowForward } from 'react-icons/io';
+import { IoIosArrowDown } from 'react-icons/io';
 import box from "@/assets/images/box.png";
 import { FaCheck } from 'react-icons/fa';
 import star from '@/assets/images/stars.png';

@@ -1,4 +1,4 @@
-import Navbar from '@/profile/navbar';
+
 import FeatureIntegration from './featureintegration';
 import star from '@/assets/images/stars.png';
 import Landingnavbar from './landingnav';
