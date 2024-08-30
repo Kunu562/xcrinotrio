@@ -15,7 +15,7 @@ function Landingnavbar() {
 
                 {/* User Profile Section */}
                 <div className='flex justify-center gap-2 sm:gap-4 lg:gap-6 items-center mt-3 sm:mt-0'>
-                    <h1>Login</h1>
+                    <h1 className='text-[#161A1A] font-normal text-sm mt-2'>Login</h1>
                     <div className=" gap-3">
                         <button className="text-white text-sm w-[66px] h-[36px] font-medium rounded-xl mt-3 border-2 bg-[#323838]">
                             Join

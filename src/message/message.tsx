@@ -13,7 +13,7 @@ const Message: React.FC<MessageProps> = ({ closeChat }) => {
     return (
         <div className="message w-full rounded-xl shadow-xl">
             <div className="flex justify-center items-center">
-                <div className="w-full lg:w-[740px] rounded-2xl">
+                <div className="w-full md:w-[540px] rounded-2xl">
                     <Header closeChat={closeChat} />
                     <ChatWindow />
                     <ChatInput />
@@ -37,7 +37,7 @@ const Header: React.FC<{ closeChat: () => void }> = ({ closeChat }) => (
 );
 
 const ChatWindow: React.FC = () => (
-    <div className="p-4 space-y-6 h-[400px] md:h-[350px] lg:h-[350px] xl:h-[450px] overflow-y-auto bg-[url('./assets/images/chatimage.png')]">
+    <div className="p-4 space-y-6 w-full h-[400px] md:h-[350px] overflow-y-auto bg-[url('./assets/images/chatimage.png')]">
         <h1 className="text-center pb-5 text-sm lg:text-[20px] font-medium text-[#161A1A]">
             Thursday, 25 August 2024
         </h1>

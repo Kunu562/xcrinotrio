@@ -124,7 +124,7 @@ function Profile() {
                             <HearAboutTiro />
 
 
-                            <div className=' fixed bottom-2 right-16 bg-white'>
+                            <div className=' fixed bottom-2 right-16'>
                                 {openChat ? <Message closeChat={handleChatToggle} />
                                     : <div className='flex gap-2 items-center justify-center' onClick={handleChatToggle}>  <button
                                         className='text-[#161A1A] border border-[#161A1A] w-32 md:w-32 lg:w-32  h-12 rounded-2xl bg-[#F8F8F8] text-center'

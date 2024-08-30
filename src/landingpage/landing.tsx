@@ -58,7 +58,7 @@ function Landing() {
             <div className='flex flex-col items-center justify-center gap-3 mt-8 px-4'>
                 <h1 className='text-[64px] font-semibold text-center'>Let Your Assistant Handle <br /> your job hunt</h1>
                 <p className='text-[18px] font-normal text-[#161A1A] text-center'>
-                    Tiro is a chat-based AI assistant that finds jobs most relevant to your profile and 
+                    Tiro is a chat-based AI assistant that finds jobs most relevant to your profile and
                     <br className="hidden md:block" />
                     submits applications on your behalf.
                 </p>
@@ -82,10 +82,7 @@ function Landing() {
                                     How do I enable the job hunt assistant feature?
                                 </ChatMessage>
                                 <ChatMessage time="11:00 AM" type="assistant">
-                                    To enable the job hunt assistant, navigate to the "Settings" or "Job Hunt"
-                                    section of the app, and toggle on the "Let Your Assistant Handle Your Job
-                                    Hunt" option. You may need to grant permissions for the assistant to
-                                    access your resume, job preferences, and other relevant details.
+                                    You can track all job applications in the "Job Applications" or "My Jobs" section. Here, you’ll see a list of jobs the assistant has applied for on your behalf, along with the application status (e.g., Submitted, In Progress, Interview Scheduled).
                                 </ChatMessage>
                             </div>
                         </div>
