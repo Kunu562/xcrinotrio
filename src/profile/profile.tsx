@@ -32,7 +32,7 @@ function Profile() {
                 </div>
             </div>
 
-            <div className='flex flex-col lg:flex-row justify-center gap-5 px-4 lg:px-16'>
+            <div className='flex flex-col lg:flex-row gap-5 px-6 lg:px-16 py-3'>
                 {/* Left div */}
                 <User />
 
@@ -72,23 +72,23 @@ function Profile() {
                         </div>
 
                         <div className="w-full flex flex-col gap-2 mt-4">
-                            <label className="font-normal text-sm lg:text-base text-[#161A1A]">Phone Number</label>
-                            <div className='flex flex-col lg:flex-row gap-4'>
-                                <input
-                                    className="px-3 py-2 w-full h-[45px] text-[#828282] font-normal text-xs bg-[#F8F8F8] rounded-xl outline-none"
-                                    type="text"
-                                    placeholder="Your phone number" />
-                                <div className='flex items-center gap-4 lg:w-[211px] rounded-xl bg-[#F8F8F8]'>
-                                    <div className='relative'>
-                                        <img src={box} alt="Verify" />
-                                        <h1 className='absolute top-2 left-0 right-0 bottom-0 text-white text-center'>Verify</h1>
-                                    </div>
-                                    <div className='w-9 h-9 rounded-full bg-white flex items-center justify-center'>
-                                        <FaCheck />
-                                    </div>
+                        <label className="font-normal text-sm lg:text-base text-[#161A1A]">Phone Number</label>
+                        <div className='flex flex-col lg:flex-row gap-4'>
+                            <input
+                                className="px-3 py-2 w-full  h-[45px] text-[#828282] font-normal text-xs bg-[#F8F8F8] rounded-xl outline-none"
+                                type="text"
+                                placeholder="Your phone number" />
+                            <div className='flex items-center gap-4 w-52 min-w-52 rounded-xl bg-[#F8F8F8]'>
+                                <div className='relative'>
+                                    <img src={box} alt="Verify" />
+                                    <h1 className='absolute top-2 left-0 right-0 bottom-0 text-white text-center'>Verify</h1>
+                                </div>
+                                <div className='w-9 h-9 rounded-full bg-white flex items-center justify-center'>
+                                    <FaCheck />
                                 </div>
                             </div>
                         </div>
+                    </div>
 
                         <ProfileOtp />
 

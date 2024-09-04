@@ -12,7 +12,7 @@ const FeatureItem: React.FC<{
     title: string;
     description: string
 }> = React.memo(({ imgSrc, title, description }) => (
-    <div className="flex items-start space-x-6 shadow-[6px_6px_10px_rgba(0,0,0,0.1)] bg-white p-4 rounded-xl">
+    <div className="flex justify-center items-center space-x-6 shadow-[6px_6px_10px_rgba(0,0,0,0.1)] bg-white w-[589px] h-[120px] p-3 rounded-xl">
         <div className="w-11 h-11 min-w-11 min-h-11 bg-[#E3E9F2] rounded-xl flex justify-center items-center">
             <img src={imgSrc} alt="" className="text-gray-600 w-6 h-6" />
         </div>
@@ -55,9 +55,9 @@ const features = [
 
 const FeatureIntegration: React.FC = () => {
     return (
-        <div className="flex flex-col md:flex-col lg:flex-row justify-between items-center  bg-white">
+        <div className="w-full max-w-[1440px]  flex flex-col md:flex-col lg:flex-row justify-between items-center  bg-white">
             {/* Left Section */}
-            <div className="flex flex-col space-y-8 md:w-full lg:w-1/2 p-6 md:p-12">
+            <div className="flex flex-col space-y-8 ">
                 {features.map((feature) => (
                     <FeatureItem
                         key={feature.title}

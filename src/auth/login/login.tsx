@@ -4,6 +4,14 @@ import { CiMail } from 'react-icons/ci';
 import { MdOutlinePhone } from 'react-icons/md';
 import curve from "@/assets/images/curve2.png"
 import curve2 from "@/assets/images/curve1.png"
+import {
+    Select,
+    SelectContent,
+    SelectGroup,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
+} from "@/components/ui/select"
 
 const Login: React.FC = () => {
     const [selectedOption, setSelectedOption] = useState<string>('Job seekers');
@@ -23,7 +31,7 @@ const Login: React.FC = () => {
                     </div>
                     <p className='text-sm font-normal mt-3 text-[#AAAAAA]'>Iam a</p>
                     <div className='flex flex-col w-full gap-4 mt-3'>
-                        <div className='border border-[#AAAAAA] w-full md:w-[350px] h-12 rounded-xl flex justify-center items-center px-3'>
+                        {/* <div className='border border-[#AAAAAA] w-full md:w-[350px] h-12 rounded-xl flex justify-center items-center px-3'>
                             <select
                                 name="userType"
                                 id="userType"
@@ -34,8 +42,24 @@ const Login: React.FC = () => {
                                 <option value="Job seekers">Job seekers</option>
                                 <option value="Recruiters">Recruiters</option>
                             </select>
-                        </div>
-                        
+                        </div> */}
+                        <Select>
+                            <SelectTrigger className="border border-[#AAAAAA] w-full md:w-[350px] h-12 outline-none rounded-xl px-4 text-[#828282] focus:outline-none placeholder:font-normal placeholder:text-sm placeholder:font-pop placeholder:text-[#d96161]">
+                                <SelectValue
+                                    className="w-full  outline-none rounded-xl font-normal text-sm font-pop text-[#5A5A5A]"
+                                    defaultValue={selectedOption}
+                                    onChange={handleChange}
+                                    placeholder="Select" />
+                            </SelectTrigger>
+                            <SelectContent className="rounded-xl font-normal text-sm font-pop text-[#5A5A5A]">
+                                <SelectGroup>
+                                    {/* <SelectLabel>Select</SelectLabel> */}
+                                    <SelectItem value="Job seekers">Job Seekers</SelectItem>
+                                    <SelectItem value="Recruiters">Recruiters</SelectItem>
+
+                                </SelectGroup>
+                            </SelectContent>
+                        </Select>
 
                         <div className="relative">
                             {selectedOption === 'Job seekers' && (

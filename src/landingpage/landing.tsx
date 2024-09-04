@@ -42,7 +42,7 @@ function Landing() {
                         {children}
                         <div className='flex justify-end items-center gap-3'>
                             <span className="text-xs text-gray-500 mt-1 inline-block">{time}</span>
-                           {!isAssistant && <LuCheckCheck className='text-[#0080FF]' /> } 
+                            {!isAssistant && <LuCheckCheck className='text-[#0080FF]' />}
                         </div>
 
                     </div>
@@ -64,8 +64,8 @@ function Landing() {
             <Landingnavbar />
 
             <div className='flex flex-col items-center justify-center gap-3 pt-8 px-4 relative overflow-hidden'>
-                <img className='absolute -top-10 -left-10' src={line} alt="" />
-                <h1 className='text-[64px] font-semibold font-inter text-center'>Let Your Assistant Handle <br /> your job hunt</h1>
+                <img className='absolute -top-10 -left-10 ' src={line} alt="" />
+                <h1 className='text-[64px] font-semibold font-inter text-center z-20'>Let Your Assistant Handle <br /> your job hunt</h1>
                 <div className='flex flex-col'>
                     <p className='text-[18px] font-normal font-inter text-[#161A1A] text-center'>
                         Tiro is a chat-based AI assistant that finds jobs most relevant to your profile and</p>
@@ -81,7 +81,7 @@ function Landing() {
             </div>
 
             <div className='flex justify-center mt-8 px-4'>
-                <div className="w-full max-w-[1340px] h-auto bg-[#323838] rounded-2xl grid md:grid-cols-2 xl:grid-cols-3 gap-5 p-5 xl:gap-10 xl:p-10">
+                <div className="w-full max-w-[1440px] h-auto bg-[#323838] rounded-2xl grid md:grid-cols-2 xl:grid-cols-3 gap-5 p-5 xl:gap-10 xl:p-10">
                     {Array.from({ length: 3 }).map((_, index) => (
                         <div key={index} className="h-auto bg-white bg-center bg-contain rounded-2xl bg-[url('./assets/images/chatimage1.png')]">
                             <div className="p-4 space-y-6">
@@ -101,19 +101,20 @@ function Landing() {
             </div>
 
             {/* Middle section profile */}
-            <div className='mt-3 px-4 sm:px-8 md:px-12'>
+            <div className=' mt-8 flex justify-center'>
                 <FeatureIntegration />
             </div>
+            <div className='flex flex-col py-14 mt-8'>
+                <h1 className='text-[40px] font-semibold text-center mt-3'>
+                    While you focus on preparation, <br />
+                    Tiro handles the rest
+                </h1>
 
-            <h1 className='text-[40px] font-semibold text-center mt-3'>
-                While you focus on preparation, <br />
-                Tiro handles the rest
-            </h1>
-
-            <div className="flex justify-center items-center gap-3 mt-3">
-                <button className="text-white text-base font-pop w-[80%] sm:w-[50%] md:w-[170px] lg:w-[170px] font-medium h-10 md:h-12 rounded-xl mt-3 border-2 bg-[#323838]">
-                    Get my assist
-                </button>
+                <div className="flex justify-center items-center gap-3 mt-3">
+                    <button className="text-white text-base font-pop w-[80%] sm:w-[50%] md:w-[170px] lg:w-[170px] font-medium h-10 md:h-12 rounded-xl mt-3 border-2 bg-[#323838]">
+                        Get my assist
+                    </button>
+                </div>
             </div>
             <div className='relative '>
                 <img className='absolute -right-0 -bottom-3 w-[35rem]' src={line2} alt="" />

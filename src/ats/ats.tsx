@@ -13,11 +13,11 @@ function Ats() {
         <div className='w-full bg-[#F8F8F8] min-h-screen'>
             <Navbar />
 
-            <div className='px-4 py-3 sm:px-8 md:px-16'>
+            <div className=' px-4 lg:px-16 py-5'>
                 <h1 className='text-[#161A1A] font-inter font-semibold text-xl'>Connect ATS</h1>
             </div>
 
-            <div className='flex flex-col lg:flex-row justify-center gap-5 px-4 sm:px-8 md:px-16'>
+            <div className='flex flex-col lg:flex-row gap-5 px-6 lg:px-16 py-3'>
                 {/* Left div */}
                 <div className='w-full lg:w-[288px] h-auto lg:h-[386px] bg-white rounded-2xl shadow-md px-5 py-5'>
                     {/* Profile div */}
@@ -103,14 +103,10 @@ function Ats() {
                             </div>
 
                             <div className="flex justify-end items-center gap-3">
-                                <button className="text-[#161A1A] w-[46px] h-[46px] text-2xl flex justify-center items-center  rounded-full mt-3 border-2 border-[#161A1A]"><IoCheckmarkSharp /></button>
-                                <button className="text-[#161A1A] w-[40%] sm:w-[30%] md:w-[25%] lg:w-[114px] xl:w-[114px] font-medium h-12 rounded-3xl mt-3 border-2 border-[#161A1A]">DELETE</button>
-                                <div className="relative h-10 flex items-center w-[40%] sm:w-[30%] md:w-[25%] lg:w-[110px]">
-                                    <button className="text-white w-full font-semibold h-12 rounded-3xl mt-3 bg-[#161A1A]">EDIT</button>
-                                    <div className="absolute top-[13px] text-white left-3 mt-1">
-                                        <FaRegEdit size={18} />
-                                    </div>
-                                </div>
+                                <button className="text-[#161A1A] text-2xl flex justify-center items-center rounded-full h-full aspect-square border-2 border-[#161A1A]"><IoCheckmarkSharp /></button>
+                                <button className="text-[#161A1A] px-5 py-3 font-medium rounded-3xl border-2 border-[#161A1A]">DELETE</button>
+                                <button className="text-white font-semibold rounded-3xl  px-5 items-center py-3 bg-[#161A1A] flex shrink-0 gap-2"> <FaRegEdit size={18} /> EDIT</button>
+                                        
                             </div>
                         </div>
                     </div>
@@ -152,10 +148,8 @@ function Ats() {
                             </div>
 
                             <div className="flex justify-end items-center gap-3">
-                                <button className="text-[#161A1A] w-[40%] sm:w-[30%] md:w-[25%] lg:w-[114px] xl:w-[114px] font-medium h-12 rounded-3xl mt-3 border-2 border-[#161A1A]">CONNECT</button>
-                                <div className="relative h-10 flex items-center w-[40%] sm:w-[30%] md:w-[25%] lg:w-[110px]">
-                                    <button className="text-white w-[151PX] font-semibold h-12 rounded-3xl mt-3 bg-[#161A1A]">CONNECTED</button>
-                                </div>
+                                <button className="text-[#161A1A] font-medium h-12 rounded-3xl py-3 px-5 border-2 border-[#161A1A]">CONNECT</button>
+                                    <button className="text-white px-5 py-3 font-semibold  rounded-3xl  bg-[#161A1A]">CONNECTED</button>
                             </div>
                         </div>
                     </div>

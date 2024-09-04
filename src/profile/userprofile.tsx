@@ -5,7 +5,7 @@ import { GoPencil } from 'react-icons/go';
 function User() {
     return (
         <div className='w-[288px] h-[450px]  bg-white rounded-2xl shadow-md px-5 py-5'>
-
+            
             {/* profile div */}
             <div className='flex flex-col w-[248px] h-64 bg-[#323838]  rounded-2xl px-4 py-3'>
                 <div className='flex justify-end'>
