@@ -75,7 +75,7 @@ function Profile() {
                             <label className="font-normal text-sm lg:text-base text-[#161A1A]">Phone Number</label>
                             <div className='flex flex-col lg:flex-row gap-4'>
                                 <input
-                                    className="px-3 py-2 w-full lg:w-[850px] h-[45px] text-[#828282] font-normal text-xs bg-[#F8F8F8] rounded-xl outline-none"
+                                    className="px-3 py-2 w-full h-[45px] text-[#828282] font-normal text-xs bg-[#F8F8F8] rounded-xl outline-none"
                                     type="text"
                                     placeholder="Your phone number" />
                                 <div className='flex items-center gap-4 lg:w-[211px] rounded-xl bg-[#F8F8F8]'>
