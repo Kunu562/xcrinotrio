@@ -22,9 +22,6 @@ const Otp: React.FC = () => {
 
 
 
-    // Handle change to move to the next input and update values
-
-
     return (
         <div className='w-full min-h-screen bg-[#F8F8F8]'>
             <Navbar />

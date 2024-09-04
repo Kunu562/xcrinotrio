@@ -32,7 +32,7 @@ function Submit() {
                         <div className='w-9 h-9 rounded-full bg-[#323838] flex items-center justify-center'>
                             <img src={star} alt="TIRO" />
                         </div>
-                        <h1 className='text-[#323838] text-xl font-semibold'>TIRO</h1>
+                        <h1 className='text-[#323838] text-xl font-lexend font-semibold'>TIRO</h1>
                     </div>
                     <div className='flex gap-3 lg:gap-8 items-center'>
                         <div className='w-9 h-9 lg:w-11 lg:h-11 rounded-full bg-[#323838]'>
@@ -54,7 +54,7 @@ function Submit() {
 
                 {/* Left Sidebar */}
 
-                <div className='w-full lg:w-[288px] lg:col-span-1 h-[450px] bg-white rounded-2xl shadow-md p-5'>
+                <div className='w-full lg:w-[288px] lg:col-span-1 h-auto bg-white rounded-2xl shadow-md p-5'>
                     <div className='flex flex-col justify-center items-center'>
                         <div className='relative w-24 h-24 lg:w-32 lg:h-32'>
                             <img className='absolute inset-0 w-full h-full rounded-full object-cover' src={user} alt="User" />

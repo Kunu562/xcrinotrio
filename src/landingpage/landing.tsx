@@ -4,6 +4,7 @@ import star from '@/assets/images/stars.png';
 import Landingnavbar from './landingnav';
 import line from "@/assets/images/landing1.png";
 import line2 from "@/assets/images/landing2.png"
+import { LuCheckCheck } from 'react-icons/lu';
 
 function Landing() {
 
@@ -27,7 +28,7 @@ function Landing() {
                 )}
                 <div className={`ml-3 ${isAssistant ? "" : "text-right"}`}>
                     <div
-                        className={`p-4 rounded-2xl ${isAssistant
+                        className={`flex flex-col p-4 rounded-2xl ${isAssistant
                             ? "bg-white text-[#323838] shadow"
                             : "bg-[#F1F3F4] text-[#323838]"
                             }`}
@@ -39,8 +40,13 @@ function Landing() {
                         }}
                     >
                         {children}
+                        <div className='flex justify-end items-center gap-3'>
+                            <span className="text-xs text-gray-500 mt-1 inline-block">{time}</span>
+                           {!isAssistant && <LuCheckCheck className='text-[#0080FF]' /> } 
+                        </div>
+
                     </div>
-                    <span className="text-xs text-gray-500 mt-1 inline-block">{time}</span>
+
                 </div>
                 {!isAssistant && (
                     <div className="ml-3 flex-shrink-0">
@@ -60,11 +66,12 @@ function Landing() {
             <div className='flex flex-col items-center justify-center gap-3 pt-8 px-4 relative overflow-hidden'>
                 <img className='absolute -top-10 -left-10' src={line} alt="" />
                 <h1 className='text-[64px] font-semibold font-inter text-center'>Let Your Assistant Handle <br /> your job hunt</h1>
-                <p className='text-[18px] font-normal font-inter text-[#161A1A] text-center'>
-                    Tiro is a chat-based AI assistant that finds jobs most relevant to your profile and
-                    <br className="hidden md:block" />
-                    submits applications on your behalf.
-                </p>
+                <div className='flex flex-col'>
+                    <p className='text-[18px] font-normal font-inter text-[#161A1A] text-center'>
+                        Tiro is a chat-based AI assistant that finds jobs most relevant to your profile and</p>
+                    <p className='text-[18px] font-normal font-inter text-[#161A1A] text-center'>submits applications on your behalf.</p>
+                </div>
+
             </div>
 
             <div className="flex justify-center items-center gap-3 mt-3">
@@ -109,7 +116,7 @@ function Landing() {
                 </button>
             </div>
             <div className='relative '>
-            <img className='absolute -right-0 -bottom-3 w-[35rem]' src={line2} alt="" />
+                <img className='absolute -right-0 -bottom-3 w-[35rem]' src={line2} alt="" />
             </div>
             <div className='w-full bg-[#161A1A] shadow-base mt-4'>
                 <div className='flex flex-col sm:flex-row justify-between items-center h-auto md:h-[109px] w-full px-4 sm:px-8 md:px-16 py-6'>
@@ -118,7 +125,7 @@ function Landing() {
                         <div className='w-9 h-9 rounded-full bg-[#323838] flex items-center justify-center'>
                             <img src={star} alt="" />
                         </div>
-                        <h1 className='text-white text-xl font-semibold'>TIRO</h1>
+                        <h1 className='text-white text-xl font-lexend font-semibold'>TIRO</h1>
                     </div>
 
                     <div className='flex gap-8 items-center'>

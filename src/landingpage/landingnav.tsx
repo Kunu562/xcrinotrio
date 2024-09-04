@@ -10,7 +10,7 @@ function Landingnavbar() {
                     <div className='w-8 h-8 rounded-full bg-[#323838] flex items-center justify-center'>
                         <img src={star} alt="Logo" className="w-5 h-5" />
                     </div>
-                    <h1 className='text-[#323838] text-base sm:text-lg md:text-xl font-semibold'>TIRO</h1>
+                    <h1 className='text-[#323838] text-xl font-lexend font-semibold'>TIRO</h1>
                 </div>
 
                 {/* User Profile Section */}
