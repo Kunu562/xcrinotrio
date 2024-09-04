@@ -64,7 +64,7 @@ function Landing() {
             <Landingnavbar />
 
             <div className='flex flex-col items-center justify-center gap-3 pt-8 px-4 relative overflow-hidden'>
-                <img className='absolute -top-10 -left-10 ' src={line} alt="" />
+                <img className='absolute -top-10 -left-10 w-1/2' src={line} alt="" />
                 <h1 className='text-[64px] font-semibold font-inter text-center z-20'>Let Your Assistant Handle <br /> your job hunt</h1>
                 <div className='flex flex-col'>
                     <p className='text-[18px] font-normal font-inter text-[#161A1A] text-center'>

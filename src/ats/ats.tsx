@@ -77,7 +77,7 @@ function Ats() {
                                 <input
                                     type="text"
                                     className="pl-8 w-full h-[48px] bg-transparent outline-none border text-sm rounded-[7px] border-[#7B8697] placeholder:text-[#5A5A5A] placeholder:font-normal placeholder:text-sm"
-                                    placeholder="user name"
+                                    placeholder="User Name"
                                 />
                                 <div className="absolute top-[13px] left-2">
                                     <FaRegUser size={18} />
@@ -122,7 +122,7 @@ function Ats() {
                                 <input
                                     type="text"
                                     className="pl-8 w-full h-[48px] bg-transparent outline-none border text-sm rounded-[7px] border-[#7B8697] placeholder:text-[#5A5A5A] placeholder:font-normal placeholder:text-sm"
-                                    placeholder="user name"
+                                    placeholder="User Name"
                                 />
                                 <div className="absolute top-[13px] left-2">
                                     <FaRegUser size={18} />
