@@ -24,11 +24,11 @@ function Profile() {
             <Navbar />
 
             <div className='flex flex-col lg:flex-row justify-between px-4 lg:px-16 py-3'>
-                <h1 className='text-[#161A1A] font-semibold text-lg lg:text-xl'>Profile</h1>
-                <div className='flex items-center gap-2 lg:gap-3 mt-2 lg:mt-0'>
-                    <h1 className='text-[#161A1A] font-semibold text-lg lg:text-xl'>Profile</h1>
+                <h1 className='text-[#161A1A] font-inter font-semibold text-xl lg:text-xl'>Profile</h1>
+                <div className='flex justify-center items-center gap-2 mt-2 lg:mt-0'>
+                    <h1 className='text-[#161A1A] font-medium font-inter text-base'>Profile</h1>
                     <IoIosArrowForward className='mt-1' />
-                    <h1 className='text-[#161A1A] font-semibold text-lg lg:text-xl'>Edit Profile</h1>
+                    <h1 className='text-[#161A1A] font-medium font-inter text-base'>Edit Profile</h1>
                 </div>
             </div>
 
@@ -71,14 +71,14 @@ function Profile() {
                                 placeholder="Your Email Address" />
                         </div>
 
-                        <div className="w-full flex flex-col gap-1 mt-4">
+                        <div className="w-full flex flex-col gap-2 mt-4">
                             <label className="font-normal text-sm lg:text-base text-[#161A1A]">Phone Number</label>
                             <div className='flex flex-col lg:flex-row gap-4'>
                                 <input
-                                    className="px-3 py-2 w-full h-[45px] text-[#828282] font-normal text-xs bg-[#F8F8F8] rounded-xl outline-none"
+                                    className="px-3 py-2 w-full lg:w-[850px] h-[45px] text-[#828282] font-normal text-xs bg-[#F8F8F8] rounded-xl outline-none"
                                     type="text"
                                     placeholder="Your phone number" />
-                                <div className='flex items-center gap-4 lg:w-[211px] bg-[#F8F8F8]'>
+                                <div className='flex items-center gap-4 lg:w-[211px] rounded-xl bg-[#F8F8F8]'>
                                     <div className='relative'>
                                         <img src={box} alt="Verify" />
                                         <h1 className='absolute top-2 left-0 right-0 bottom-0 text-white text-center'>Verify</h1>

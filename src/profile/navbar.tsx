@@ -12,7 +12,7 @@ function Navbar() {
                     <div className='w-8 h-8 rounded-full bg-[#323838] flex items-center justify-center'>
                         <img src={star} alt="Logo" className="w-5 h-5" />
                     </div>
-                    <h1 className='text-[#323838] text-base sm:text-lg md:text-xl font-semibold'>TIRO</h1>
+                    <h1 className='text-[#161A1A] text-xl font-semibold font-lexend'>TIRO</h1>
                 </div>
 
                 {/* User Profile Section */}
@@ -21,8 +21,8 @@ function Navbar() {
                         <img src={user} alt="User" className="w-full h-full object-cover rounded-full" />
                     </div>
                     <div className='flex flex-col text-center sm:text-left'>
-                        <h1 className='text-[#222222] text-sm sm:text-base md:text-base font-medium'>Caleb Antonucci</h1>
-                        <p className='text-[#323838] text-xs sm:text-sm font-normal'>User</p>
+                        <h1 className='text-[#222222] text-sm sm:text-base md:text-base font-medium font-pop'>Caleb Antonucci</h1>
+                        <p className='text-[#323838] text-xs sm:text-sm font-normal font-pop'>User</p>
                     </div>
                     <div className='w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#E8E8E8] flex items-center justify-center'>
                         <IoIosArrowDown />

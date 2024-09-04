@@ -2,6 +2,8 @@
 import FeatureIntegration from './featureintegration';
 import star from '@/assets/images/stars.png';
 import Landingnavbar from './landingnav';
+import line from "@/assets/images/landing1.png";
+import line2 from "@/assets/images/landing2.png"
 
 function Landing() {
 
@@ -55,9 +57,10 @@ function Landing() {
         <div className='w-full bg-white'>
             <Landingnavbar />
 
-            <div className='flex flex-col items-center justify-center gap-3 mt-8 px-4'>
-                <h1 className='text-[64px] font-semibold text-center'>Let Your Assistant Handle <br /> your job hunt</h1>
-                <p className='text-[18px] font-normal text-[#161A1A] text-center'>
+            <div className='flex flex-col items-center justify-center gap-3 pt-8 px-4 relative overflow-hidden'>
+                <img className='absolute -top-10 -left-10' src={line} alt="" />
+                <h1 className='text-[64px] font-semibold font-inter text-center'>Let Your Assistant Handle <br /> your job hunt</h1>
+                <p className='text-[18px] font-normal font-inter text-[#161A1A] text-center'>
                     Tiro is a chat-based AI assistant that finds jobs most relevant to your profile and
                     <br className="hidden md:block" />
                     submits applications on your behalf.
@@ -65,7 +68,7 @@ function Landing() {
             </div>
 
             <div className="flex justify-center items-center gap-3 mt-3">
-                <button className="text-white text-sm md:text-base w-[80%] sm:w-[50%] md:w-[30%] lg:w-[20%] font-medium h-10 md:h-12 rounded-3xl mt-3 border-2 bg-[#323838]">
+                <button className="text-white text-base font-pop w-[80%] sm:w-[50%] md:w-[170px] lg:w-[170px] font-medium h-10 md:h-12 rounded-xl mt-3 border-2 bg-[#323838]">
                     Get my assist
                 </button>
             </div>
@@ -73,7 +76,7 @@ function Landing() {
             <div className='flex justify-center mt-8 px-4'>
                 <div className="w-full max-w-[1340px] h-auto bg-[#323838] rounded-2xl grid md:grid-cols-2 xl:grid-cols-3 gap-5 p-5 xl:gap-10 xl:p-10">
                     {Array.from({ length: 3 }).map((_, index) => (
-                        <div key={index} className="h-auto bg-white rounded-2xl bg-[url('./assets/images/chatimage.png')]">
+                        <div key={index} className="h-auto bg-white bg-center bg-contain rounded-2xl bg-[url('./assets/images/chatimage1.png')]">
                             <div className="p-4 space-y-6">
                                 <ChatMessage time="11:00 AM" type="assistant">
                                     Welcome! 👋 I'm Tiro, here to assist with all your requirements.
@@ -101,13 +104,15 @@ function Landing() {
             </h1>
 
             <div className="flex justify-center items-center gap-3 mt-3">
-                <button className="text-white text-sm md:text-base w-[80%] sm:w-[50%] md:w-[30%] lg:w-[20%] font-medium h-10 md:h-12 rounded-3xl mt-3 border-2 bg-[#323838]">
+                <button className="text-white text-base font-pop w-[80%] sm:w-[50%] md:w-[170px] lg:w-[170px] font-medium h-10 md:h-12 rounded-xl mt-3 border-2 bg-[#323838]">
                     Get my assist
                 </button>
             </div>
-
+            <div className='relative '>
+            <img className='absolute -right-0 -bottom-3 w-[35rem]' src={line2} alt="" />
+            </div>
             <div className='w-full bg-[#161A1A] shadow-base mt-4'>
-                <div className='flex flex-col sm:flex-row justify-between h-auto sm:h-14 w-full px-4 sm:px-8 md:px-16 py-4'>
+                <div className='flex flex-col sm:flex-row justify-between items-center h-auto md:h-[109px] w-full px-4 sm:px-8 md:px-16 py-6'>
 
                     <div className='flex items-center gap-3'>
                         <div className='w-9 h-9 rounded-full bg-[#323838] flex items-center justify-center'>
@@ -116,7 +121,7 @@ function Landing() {
                         <h1 className='text-white text-xl font-semibold'>TIRO</h1>
                     </div>
 
-                    <div className='flex gap-8 items-center mt-2 sm:mt-0'>
+                    <div className='flex gap-8 items-center'>
                         <h1 className='text-sm text-[#FFFFFF]'>Privacy / Terms of uses</h1>
                     </div>
                 </div>

@@ -24,7 +24,7 @@ const Message: React.FC<MessageProps> = ({ closeChat }) => {
 };
 
 const Header: React.FC<{ closeChat: () => void }> = ({ closeChat }) => (
-    <div className="flex items-center bg-white p-4 border-b border-gray-200">
+    <div className="flex items-center bg-white p-4 border-b border-gray-200 rounded-2xl">
         <div className='w-9 h-9 lg:w-11 lg:h-11 rounded-full bg-[#323838]'>
             <img src={user} alt="User" />
         </div>
@@ -37,7 +37,7 @@ const Header: React.FC<{ closeChat: () => void }> = ({ closeChat }) => (
 );
 
 const ChatWindow: React.FC = () => (
-    <div className="p-4 space-y-6 w-full h-[400px] md:h-[350px] overflow-y-auto bg-[url('./assets/images/chatimage.png')]">
+    <div className="scrollbar-hidden p-4 space-y-6 w-full h-[400px] md:h-[350px] overflow-y-auto bg-white bg-[url('./assets/images/chatimage.png')]">
         <h1 className="text-center pb-5 text-sm lg:text-[20px] font-medium text-[#161A1A]">
             Thursday, 25 August 2024
         </h1>
@@ -103,7 +103,7 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ time, type, children }) => {
 };
 
 const ChatInput: React.FC = () => (
-    <div className="p-4 flex items-center w-full bg-white">
+    <div className="p-4 flex items-center w-full bg-white rounded-xl">
         <div className="p-3 rounded-2xl border relative w-full flex gap-3">
             <img src={pin} alt="Pin" />
             <input

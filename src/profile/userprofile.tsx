@@ -28,24 +28,24 @@ function User() {
 
             <div className='mt-5 flex flex-col gap-2'>
                 <div className='flex justify-between'>
-                    <h1 className='font-medium text-xs text-[#828282]'>Mobile</h1>
-                    <p className='font-normal text-xs text-[#161A1A]'>+1-9712435990</p>
+                    <h1 className='font-medium font-inter text-xs text-[#828282]'>Mobile</h1>
+                    <p className='font-normal font-inter text-xs text-[#161A1A]'>+1-9712435990</p>
                 </div>
 
                 <div className='flex justify-between'>
-                    <h1 className='font-medium text-xs text-[#828282]'>E-Mail</h1>
-                    <p className='font-normal text-xs text-[#161A1A]'>patriciapeter@gmail.com</p>
+                    <h1 className='font-medium font-inter text-xs text-[#828282]'>E-Mail</h1>
+                    <p className='font-normal font-inter text-xs text-[#161A1A]'>patriciapeter@gmail.com</p>
                 </div>
 
                 <div className='flex justify-between'>
-                    <h1 className='font-medium text-xs text-[#828282]'>Location</h1>
-                    <p className='font-normal text-xs text-[#161A1A]'>Chicago, IL 60618</p>
+                    <h1 className='font-medium font-inter text-xs text-[#828282]'>Location</h1>
+                    <p className='font-normal font-inter text-xs text-[#161A1A]'>Chicago, IL 60618</p>
                 </div>
             </div>
 
             <div className='bg-[#F8F8F8] p-2 flex gap-3 items-center rounded-xl mt-4'>
                 <FaRegUser />
-                <h1 className='text-[#323838] font-medium text-sm'>Edit Profile</h1>
+                <h1 className='text-[#323838] font-medium font-inter text-sm'>Edit Profile</h1>
             </div>
         </div>
     )
